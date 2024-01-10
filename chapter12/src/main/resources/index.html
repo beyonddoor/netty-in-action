@@ -32,7 +32,6 @@
                 $('#connect').click(function () {
                     if (ws == null || ws.readyState != 1) {
                         ws = new WebSocket($('#url').val())
-
                         ws.onerror = function (e) {
                             log('Error : ' + e.message)
                         }
